@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>News Website</title>
+</head>
+
+<body>
+    <header>
+        <!-- navigation -->
+        <nav class="navbar">
+            <div class="logo border">
+                <!-- <img src="logo.png" alt="" height="60px"> -->
+            </div>
+            <!-- navigation menu -->
+            <div class="navigation">
+
+                <ul class="nav">
+                    <li class=" navitem" id="home"><a href="index.html">Home</a></li>
+                    <li class=" navitem" id="tech" onclick="onNavItemClick('tech')"><a href="#">Technology</a></li>
+                    <li class=" navitem" id="Education" onclick="onNavItemClick('Education')"><a href="#">Education</a></li>
+                    <li class=" navitem" id="Sports" onclick="onNavItemClick('Sports')"><a href="#">Sports</a></li>
+                    <li class=" navitem" id="Politics" onclick="onNavItemClick('Politics')"><a href="#">Politics</a></li>
+                    <li class=" navitem"><a href="#">About_Us</a></li>
+
+                </ul>
+            </div>
+            <!-- search bar -->
+            <div class="search">
+                <input type="text" placeholder="Search here" class="border" id="search-txt">
+                <button class="btn border" id="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container" id="card-container">
+
+        </div>
+        <template id="template-card">
+
+                <div class="card">
+                   
+    
+                    <div class="card-haerder">
+                        <img src="img.jpg" alt="" id="card-img">
+                    </div>
+                    <div class="card-containt">
+                        <h3 id="title">this is title</h3>
+                        <h6 id="date">this is date 25/09/2002</h6>
+                        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero recusandae accusamus pariatur molestias odio magnam dolorem laudantium libero dicta, perspiciatis nisi voluptas, nulla illo labore veritatis asperiores fuga. Soluta odio
+                            !
+                        </p>
+                    </div>
+                </div>
+            </template>
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p><span class="copyright">&copy;</span>copy right</p>
+        </div>
+        <div>
+            <ul class="footnav">
+
+                <li onclick="onNavItemClick('tech')"><a href="#">Technology</a></li>
+                <li onclick="onNavItemClick('Education')"><a href="#">Education</a></li>
+                <li onclick="onNavItemClick('Sports')"><a href="#">Sports</a></li>
+                <li onclick="onNavItemClick('Politics')"><a href="#">Politics</a></li>
+                <li><a href="#">About_Us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="socialmedia">
+            <a href="https://github.com/rohidasalse"><img src="githubpng.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/rohidas-alse-b0a89225a/"><img src="linkedinpng.png" alt=""></a>
+            <a href="https://www.instagram.com/rohidasalse/?next=%2F"><img src="instajpg.jpg" alt=""></a>
+            <a href="https://www.facebook.com/rohidas.alse.58/"><img src="facebookjpg.jpg" alt=""></a>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
